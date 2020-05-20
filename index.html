@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <title>Farlandia</title>
+    <style>
+      .inputs {
+        min-width: 500px;
+      }
+      input {
+        font-size: 0.8em !important;
+      }
+
+      @media (max-width: 768px) {
+        .inputs {
+          min-width: 90% !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="text-center mt-1">Farlandia</h2>
+      <!-- <div style="display: flex !important;  justify-content: center;" class="input-group">
+      <div class="inputs d-flex flex-column">
+        <input id="cities" class="form-control mb-2" type="number" placeholder="Insert cities population">
+        <input id="suburbs" class="form-control mb-2" type="number" placeholder="Insert suburbs population">
+        <input id="villages" class="form-control mb-2" type="number" placeholder="Insert villages population">
+        <input id="years" class="form-control mb-2" type="number" placeholder="Insert years">
+        <input id="submit" class="btn btn-primary mb-3" type="button" value="submit" onclick="insertData()">
+      </div>
+    </div> -->
+
+      <section class="d-flex justify-content-center">
+        <h5 class="mr-3">Output:</h5>
+        Citites: <span class="mr-3" id="city"></span> Suburbs:
+        <span class="mr-3" id="suburb"></span> Villages:
+        <span class="mr-3" id="village"></span>
+      </section>
+
+      <canvas id="myChart1"></canvas>
+      <br />
+      <canvas id="myChart2"></canvas>
+      <br />
+      <canvas id="myChart3"></canvas>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
