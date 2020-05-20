@@ -64,7 +64,7 @@ let myChart2 = new Chart(ctx2, {
     labels: [],
     datasets: [
       {
-        label: "Subrubs Population",
+        label: "Suburbs Population",
         data: [],
         backgroundColor: "rgba(194, 37, 37, 0.25)",
         borderColor: "rgb(194, 37, 37)",
