@@ -1,5 +1,5 @@
 let chartData = [];
-const cantComeUpWithFuncName = (cities = 100000000,suburbs = 100000000,villages = 100000000,years = 100) => {
+const cantComeUpWithFuncName = (cities = 100000000,suburbs = 100000000,villages = 100000000,years = 200) => {
   chartData.push({
     year: 0,
     citiesPop: cities,
@@ -118,9 +118,9 @@ cantComeUpWithFuncName();
 addData(chartData);
 console.log(chartData);
 
-document.getElementById("city").innerHTML = chartData.slice(-1)[0].citiesPop;
-document.getElementById("suburb").innerHTML = chartData.slice(-1)[0].suburbsPop;
-document.getElementById("village").innerHTML = chartData.slice(-1)[0].villagesPop;
+document.getElementById("city").innerHTML = chartData[100].citiesPop;
+document.getElementById("suburb").innerHTML = chartData[100].suburbsPop;
+document.getElementById("village").innerHTML = chartData[100].villagesPop;
 
 // const insertData = () => {
 //   let cities = document.getElementById('cities').value
